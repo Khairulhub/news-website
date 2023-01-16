@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   
+    <link rel="apple-touch-icon" sizes="180x180" href="https://account.neweradrugtesting.com/public/images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://account.neweradrugtesting.com/public/images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://account.neweradrugtesting.com/public/images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <title>New Era Drug Testing Admin Login</title>
+
+    <!-- jQuery -->
+    <script src="https://account.neweradrugtesting.com/public/vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <link href="https://account.neweradrugtesting.com/public/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Animate.css -->
+    <link href="https://colorlib.com/polygon/gentelella/css/animate.min.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="../js/query/custom.min.css" rel="stylesheet" type="text/css">
+    <!-- New Era Specific Style -->
+    <link href="../js/query/newera.css" rel="stylesheet" type="text/css"/>
+  </head>
+
+  <body class="login">
+    <div>
+      <a class="hiddenanchor" id="signup"></a>
+      <a class="hiddenanchor" id="signin"></a>
+      
+            <div class="login_wrapper">
+        <div class="animate form login_form" id="loginForm">
+          <section class="login_content">
+            <form class="form-horizontal" role="form" method="POST" action="https://account.neweradrugtesting.com/login">
+              <input type="hidden" name="_token" value="WYaATpVFPjegbei9CFHvMvvu6US2GDPW2ebj1jWp">
+              <h1>New Era</h1>
+              <h1><img src="https://account.neweradrugtesting.com/public/images/logo_big.png" alt="newera" style="margin: auto; display:block;"></h1>
+              <div>
+                <input type="text" name="username" class="form-control" placeholder="Username" required />
+                              </div>
+              <div>
+                <input type="password" name="password" class="form-control" placeholder="Password" required />
+                              </div>
+              <div>
+                <button type="submit" class="btn btn-default submit">
+                    <i class="fa fa-btn fa-sign-in"></i>Login
+                </button>
+                <a class="reset_pass" href="#" id="forgotpass">Lost your password?</a>
+                <a class="reset_pass" href="#" id="forgotuser">Lost your username?</a>
+              </div>
+
+              <div class="clearfix"></div>
+
+              
+
+              </div-->
+            </form>
+          </section>
+        </div>
+
+        <!--FORGOT PASSWORD SECTION-->
+        <div class="animate form login_form" id="forgotpassword" style="display:none;">
+          <section class="login_content">
+            <form class="form-horizontal" role="form" method="POST" action="https://account.neweradrugtesting.com/forgotpassword">
+              <input type="hidden" name="_token" value="WYaATpVFPjegbei9CFHvMvvu6US2GDPW2ebj1jWp">
+              <h1>Forgot Password</h1>
+              <div>
+                <input type="text" name="username" class="form-control" placeholder="Username" required />
+                              </div>
+              <div>
+                <input type="email" name="email" class="form-control" placeholder="Email" required />
+                              </div>
+              <div>
+                <button type="submit" class="btn btn-default submit">
+                    <i class="fa fa-btn fa-sign-in"></i>Reset Password
+                </button>
+                <a class="reset_pass" href="#" name="loginBtn">Back To Login</a>
+              </div>
+
+            </form>
+          </section>
+        </div>
+
+        <!--FORGOT USERNAME SECTION-->
+        <div class="animate form login_form" id="forgotusername" style="display:none;">
+          <section class="login_content">
+            <form class="form-horizontal" role="form" method="POST" action="https://account.neweradrugtesting.com/forgotusername">
+              <input type="hidden" name="_token" value="WYaATpVFPjegbei9CFHvMvvu6US2GDPW2ebj1jWp">
+              <h1>Forgot Username</h1>
+              
+              <div>
+                <input type="email" name="email" class="form-control" placeholder="Email" required />
+                              </div>
+              <div>
+                <button type="submit" class="btn btn-default submit">
+                    <i class="fa fa-btn fa-sign-in"></i>Send Username
+                </button>
+                <a class="reset_pass" href="#" name="loginBtn">Back To Login</a>
+              </div>
+
+            </form>
+          </section>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- <script type="text/javascript">
+    $(document).ready(function() {
+
+        $("#forgotpass").click(function(){
+            // $("#forgotpassword").toggle();
+            // $("#loginForm").toggle();
+            // $("#forgotusername").toggle();
+
+            if( $("#forgotusername").is(":visible") ) {
+              $("#forgotusername").hide();
+            }
+            if( $("#loginForm").is(":visible") ) {
+              $("#loginForm").hide();
+            }
+
+            $("#forgotpassword").show();
+        });
+        
+        $("#forgotuser").click(function(){
+            //$("#forgotpassword").toggle();
+            //$("#loginForm").toggle();
+            //$("#forgotusername").toggle();
+
+            if( $("#forgotpassword").is(":visible") ) {
+              $("#forgotpassword").hide();
+            }
+            if( $("#loginForm").is(":visible") ) {
+              $("#loginForm").hide();
+            }
+
+            $("#forgotusername").show();
+        });
+
+        $("[name='loginBtn']").click(function() {
+            if( $("#forgotpassword").is(":visible") ) {
+              $("#forgotpassword").hide();
+            }
+            if( $("#forgotusername").is(":visible") ) {
+              $("#forgotusername").hide();
+            }
+            
+            $("#loginForm").show()
+
+            //$("#forgotpassword").toggle();
+            //$("#loginForm").toggle();
+            //$("#forgotusername").toggle();
+        });
+    });
+  </script> -->

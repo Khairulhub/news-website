@@ -1,0 +1,148 @@
+.error-red {
+	color:red;
+}
+
+.greenbg {
+  background: #38c485;
+  color: #FFF;
+  font-family: Roboto, sans-serif;
+  margin: 10px 0;
+}
+
+.no-radius {
+  border-radius: 4px;
+}
+
+#credit-balance{
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.cursor{
+  cursor:pointer;
+}
+
+.preloader
+{
+    display:none;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 998;
+    /* IE 8 */
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+
+      /* IE 5-7 */
+      filter: alpha(opacity=75);
+
+      /* Netscape */
+      -moz-opacity: 0.75;
+
+      /* Safari 1.x */
+      -khtml-opacity: 0.75;
+
+      /* Good browsers */
+    opacity: 0.75;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 150px;
+}
+
+.preloader i, .preloader div
+{
+    color:black;
+}
+
+
+.modal-preloader
+{
+    display:none;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 998;
+    /* IE 8 */
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+
+      /* IE 5-7 */
+      filter: alpha(opacity=75);
+
+      /* Netscape */
+      -moz-opacity: 0.75;
+
+      /* Safari 1.x */
+      -khtml-opacity: 0.75;
+
+      /* Good browsers */
+    opacity: 0.75;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 150px;
+}
+
+.modal-preloader i, .modal-preloader div
+{
+    color:black;
+}
+
+.material-switch > input[type="checkbox"] {
+    display: none;
+}
+
+.material-switch > label {
+    cursor: pointer;
+    height: 0px;
+    position: relative;
+    width: 40px;
+}
+
+.material-switch > label::before {
+    background: rgb(0, 0, 0);
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    content: '';
+    height: 16px;
+    margin-top: -8px;
+    position:absolute;
+    opacity: 0.3;
+    transition: all 0.4s ease-in-out;
+    width: 40px;
+}
+.material-switch > label::after {
+    background: rgb(255, 255, 255);
+    border-radius: 16px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    content: '';
+    height: 24px;
+    left: -4px;
+    margin-top: -8px;
+    position: absolute;
+    top: -4px;
+    transition: all 0.3s ease-in-out;
+    width: 24px;
+}
+.material-switch > input[type="checkbox"]:checked + label::before {
+    background: inherit;
+    opacity: 0.5;
+}
+.material-switch > input[type="checkbox"]:checked + label::after {
+    background: inherit;
+    left: 20px;
+}
+
+#SSNArea { font-weight: normal; font-family: 'Segoe UI'; font-size: 20px; text-align: center; width: 130px; min-width: 85px; display: inline; }
+#SSNGroup { font-weight: normal; font-family: 'Segoe UI'; font-size: 20px; text-align: center; width: 125px; min-width: 65px; display: inline; }
+#SSNSerial { font-weight: normal; font-family: 'Segoe UI'; font-size: 20px; text-align: center; width: 130px; min-width: 85px; display: inline; }
+
+.capital 
+{
+    text-transform:capitalize;
+}

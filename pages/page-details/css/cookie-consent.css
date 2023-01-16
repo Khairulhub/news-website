@@ -1,0 +1,44 @@
+/*--------------------------------------------------------------
+# Cookie Consent Styles
+--------------------------------------------------------------*/
+.cookie-consent-container {
+	align-items: center;
+    background-color: rgba(0 0 0 / .9);
+    color: hsl(0deg, 0%, 90%);
+	display: grid;
+	gap: 2em;
+	grid-auto-flow: column;
+	justify-content: center;
+    bottom: 0;
+    left:  0;
+    right: 0;
+    top: auto;
+    width: 100vw;
+    padding: 1em;
+    position: fixed;
+    z-index: 9999999;
+}
+
+.cookie-consent-content {
+    font-size: .8rem;
+	margin: 0;
+}
+
+a:is(.cookie-consent-policy) {
+	color: hsl(0deg, 0%, 100%);
+	font-weight: bold;
+}
+
+.cookie-consent-button {
+	all: unset;
+	background-color: hsl(0deg, 0%, 100%);
+    border-radius: 4px;
+    color: hsl(0deg, 0%, 20%);;
+    cursor: pointer;
+    padding: 0.2rem 1.5rem;
+}
+
+.cookie-consent-button:hover {
+	background-color: hsl(130deg, 100%, 40%);
+    color: hsl(0deg, 0%, 100%);;
+}
